@@ -1,4 +1,22 @@
+<html>
+<head >
+	<script type='text/javascript'
+	        src='https://cdn.firebase.com/v0/firebase-simple-login.js'>
+	</script>
+</head>
+<body>
+<script>
+var chatRef = new Firebase('https://bloodg.firebaseio.com/');
+var auth = new FirebaseSimpleLogin(bloodg, function(error, user) {
+  
+auth.login('anonymous');
+
+});
+</script>
 <p id="notice"><%= notice %></p>
+
+
+
 
 <p>
   <b>Email:</b>
@@ -11,6 +29,8 @@
 </p>
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %> |
+<!--hidden <%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %> | -->
 <%= link_to 'Logout', logout_users_path %>
+</body>
+</html>

@@ -23,3 +23,15 @@
 <br />
 
 <%= link_to 'New User', new_user_path %>
+<!-- code doesnt work implement firebase and ruby <p>
+
+<%=base_uri = 'https://bloodg.firebaseio.com/' %>
+
+firebase = Firebase.new(base_uri)
+
+response = firebase.push("todos", { :name => 'Pick the milk', :priority => 1 })
+response.success? # => true
+response.code # => 200
+response.body # => { 'name' => "-INOQPH-aV_psbk3ZXEX" }
+response.raw_body # => '{"name":"-INOQPH-aV_psbk3ZXEX"}' </p> -->
+
