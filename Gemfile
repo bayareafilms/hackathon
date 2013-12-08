@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'omniauth'
 gem 'omniauth-clef'
 gem 'better_errors'
+gem 'firebase'
 
 # Gems used only for assets and not required
 # in production environments by default.
